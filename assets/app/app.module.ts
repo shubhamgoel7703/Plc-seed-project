@@ -10,6 +10,7 @@ import {RouterModule} from '@angular/router';
 import {HttpModule} from '@angular/http'; 
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -27,7 +28,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 		FormsModule,	 
 		 ReactiveFormsModule
 			],
-		    bootstrap: [AppComponent]
+			bootstrap: [AppComponent]
 })
 export class AppModule {
 

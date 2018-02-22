@@ -50,16 +50,11 @@ if(this.myForm.value.email==='shubham')
     },
     error => {console.log("errorrrrr");console.error(error)}); 
 
-   // return this.http.post('/users/signin','{username:ss}').subscribe(response => {console.log(response);});
-     
-   // localStorage.setItem('token', data.token);
-  //localStorage.setItem('userId', data.userId);
-  //this.router.navigateByUrl('/dash');
-
 }
-else{
-  console.error("invalid credentials");
-}
+  else
+  {
+    console.error("invalid credentials");
+  }
   
   }
 
