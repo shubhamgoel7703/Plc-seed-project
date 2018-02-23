@@ -11,6 +11,7 @@ router.get('/', function (req, res, next) {
     res.render('index');
 });
 
+//use by cloud FE
 router.get('/flowdata', function (req, res, next) {
     console.log("coming in get");
 
@@ -19,6 +20,7 @@ router.get('/flowdata', function (req, res, next) {
    });
 });
 
+//use by PLC
 router.get('/pumpstatusandsetpoint', function (req, res, next) {
     console.log("coming in get");
 
@@ -29,7 +31,7 @@ router.get('/pumpstatusandsetpoint', function (req, res, next) {
 });
 
 
-
+//use by cloud FE
 router.post('/pumpstatus', function (req, res, next){
     console.log(req.body);
     console.log("in pump status");
@@ -42,12 +44,13 @@ router.post('/pumpstatus', function (req, res, next){
     console.log(PumpStatus);
 });
 
-
-router.post('/flowdata', function (req, res, next)
-{
+//use by PLC
+router.post('/flowdata', function (req, res, next){
+    console.log(req.body);
     flowData=req.body;
 });
 
+//use by cloud FE
 router.post('/setpoint', function (req, res, next){
     console.log(req.body);
     console.log("in setpoint status");

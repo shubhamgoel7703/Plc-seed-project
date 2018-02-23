@@ -37,7 +37,7 @@ getFlowData()
 },
 error => {  console.log("flowdata send fail");console.error(error)}); 
 
-setTimeout(()=>{    //<<<---    using ()=> syntax
+setTimeout(()=>{    
   this.getFlowData();
 },10000);
 }
